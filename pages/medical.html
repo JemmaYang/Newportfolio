@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Medication Monitor App -Yajing's Portfolio</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+       <a href="index.html" id="logo">JEMMA YANG</a>
+       <div class="menu">
+         <a href="index.html#Work">WHAT I DO</a>
+         <a href="resume.pdf" target="_blank">WHO I AM</a>
+         <a href="#footer"><button class="button">CONTACT ME</button></a>     <a href="javascript:void(0);" id="hamburgMenu" onclick="hamburgMenu()">&#9776;</a>
+       </div>
+    </div>
+
+    <div class="medicalrow">
+       <div class="heroImg">
+       	 <img id="medicalHero" src="../medicalImage/medical.png">
+       </div>
+       <div class="title">
+       	 <h2>Medication Monitor Application</h2>
+       	 <h3>… a medication reminder system for remote care taker…</h3>
+       </div>
+    </div>
+
+
+  <nav id='nav_bar'>
+    <ul class='nav_links' id="nav">
+      <li><a href="#overview" class="active">OVERVIEW</a></li>
+      <li><a href="#scenario">SCENARIO</a></li>
+      <li><a href="#closerlook">CLOSER LOOK</a></li>
+      <li><a href="#usertesting">USER TESTING</a></li>
+      <li><a href="#device">DEVICE</a></li>
+    </ul>
+  </nav>
+
+  <div class="myRole">
+    <div class="col-group">
+      <div class="left" >
+        <h2>MY ROLES</h2>
+        <p>UX Design<br>
+           Visual Design<br>
+           Prototyping<br>
+           User Testing</p>
+      </div>
+      <div class="right">
+        <h2>CLIENT & DATE</h2>
+        <p>ID 6515<br>
+          09/2017 - 12/2017</p>
+      </div>
+     </div>
+
+    <div class="col-group">
+      <div class="left" >
+        <h2>METHODS</h2>
+        <p>Scenarios<br>
+           Persona<br>
+           Usability Testing</p>
+      </div>
+
+      <div class="right" >
+        <h2>TOOLS</h2>
+        <p>Balsamiq<br>
+           Sketch<br>
+           InVision<br>
+           Fusion 360</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="overview">
+    <div>
+      <h2>Brief</h2>
+      <p>As our population ages, many adult children are becoming more involved in their parent’s care.  This includes larger issues such as finances and make their homes safer to more daily involvement such as transportation and meals.  Parents are taking more medication so an added stress with s parent still on their own is making sure they take the right medication and at the right time. Besides, if a medication is missed, a care giver such as child does not have a useful way to monitor their parent’s medication.</p>
+    </div>
+
+    <div>
+      <h2>Task</h2>
+      <p>This project aims to design three artifacts:</p>
+      <p>&#9702; A <b>mobile application</b> that monitors the patient's medication dosage status which is used by the caregiver.<br>
+      &#9702; An <b>automatic medication dispensing device</b> to help the patient take medication without forgetting.<br>
+      &#9702; An <b>artifact the patient will always carry</b> that communicates with the other two devices in order to provide visual information and auditory guidance.</p>
+      
+    </div>
+  </div>
+
+   <div class="content" id="scenario">
+    <h1>Scenario Based Design</h1>
+    <p>To understand context information about the user (care giver) and how the iOS app can address the situation, I created a scenario that presents a typical situation of how a care giver might use an iOS app to monitor a patient's medication dosage.</p>
+    
+    <div>
+      <h2>User story</h2>
+      <p>Alisa is working on her master’s degree of Human-Computer Interaction at Atlanta. She is a 28 years old User Experience Designer, used to work for a local design studio four years at Saint Paul, Minnesota, where she grew up and where her parents are living at. While Alisa stayed at Saint Paul, she lived in an apartment that was 10 mins walking distance from her parents’ house. Because her parents have been facing health issues and they have to consume multiple medication. </p>
+      <p><b>- Her mother, Jane, has been diagnosed with diabetes and needs to take pills thrice a day to keep her blood sugar under control. Her medicine needs to be taken after meals. </b></p>
+      <p><b>- Alisa’s father, Dennis, has been suffered from high cholesterol and high blood pressure so that he needs to take two medicines quartic a day and reduce his salt intake in diet.</b></p>
+      <p>One year ago, Alisa decided to return to campus and apply for a master’s degree to further her career. However, she received an offer from Georgia Institute of Technology, which is her dream school, but far away from Saint Paul. Alisa was very reluctant to move to another city, because she felt really uncomfortable of leaving her parents behind. But her parents encouraged her to take this offer because it benefited her career. </p>
+      <p>To better take care of her parents when she would move to Atlanta, Alisa bought her parents an automated pill dispensing device to remind them of taking their medication on time. The device came with an iOS application for informing care giver about patients’ status and monitoring patients’ regular medical checkups so that Alisa could keep tracking her parents even if she had to move to another city. 
+      <p>Once the device was completely set up, </p>
+      <p><b>- Alisa would get notifications if her parents forget to take their medicines.</b></p>
+      <p><b>- She would also receive reminders of making appointments with doctors online when her parents need to take medical checkups once a month.</b></p>
+    </div>
+
+    <div>
+      <h2>Persona</h2>
+      <img class="contentImage" src="../medicalImage/persona.png">
+    </div>
+
+    <div>
+      <h2>Scenario walkthrough wireframes</h2>
+       <div class="twoColums">
+         <div class="wireLeft">
+           <img class="contentImage" src="../medicalImage/figure1.png">
+         </div>
+         <div class="wireRight">
+           <p style="padding-top: 80px;">After using the app for half a month, Alisa notices that her mother has a tendency to delay taking her noon pills and she takes it at around 2 to 3 pm instead of right after lunch.</p>
+         </div>
+       </div>
+
+       <div class="twoColums">
+         <div class="wireHoriztalLeft">
+           <p style="padding-top: 40px;">Alisa checks alter status on her mother’s medicine history, and she opens a drop down list from the button “status”.</p>
+         </div>
+         <div class="wireHoriztalRight">
+           <img class="contentImage" src="../medicalImage/figure3.png">
+         </div>
+       </div>
+      
+      <p>Alisa finds that she usually receives more than four notifications at noon until Jane takes her noon pills. Alisa called her mother and found out that Jane has difficulty hearing notification from device when she was preparing lunch at kitchen.</p>
+
+      <div class="twoColums">
+         <div class="wireHoriztalLeft">
+           <p style="padding-top: 80px;">To address this problem, Alisa goes to the reminder section and edits her mother’s reminder by increasing the alarm frequency to every 10 minutes and louder volume.</p>
+         </div>
+         <div class="wireHoriztalRight">
+           <img class="contentImage" src="../medicalImage/figure4-5.png">
+         </div>
+       </div>
+
+       <div class="twoColums">
+         <div class="wireLeft">
+           <img class="contentImage" src="../medicalImage/figure2.png">
+         </div>
+         <div class="wireRight">
+           <p style="padding-top: 80px;">One day Alisa is working on her presentation for tomorrow’s class, she notices her phone is vibrating and sending her an alter that her father’s pill dispensing device is almost out of batteries. </p>
+           <p>Before calling her father, Alisa wants to wait for a while and she thinks that Dennis will notice the alter himself. So Alisa presses “Remind in 5” and continues her studying.</p>
+         </div>
+       </div>
+
+       <div class="twoColums">
+         <div class="wire02Left">
+           <p style="padding-top: 80px;">However, after 15 minutes, the app has sent the later thrice but Dennis still doesn’t charge the device. In order to not lose tracking of her father, Alisa calls Dennis and reminds him of charging his device immediately.</p>
+           <p>Then Alisa adds a reminder of charging device at 10 pm every day under Dennis’ account at the iOS application.</p>
+         </div>
+         <div class="wire02Right">
+           <img class="contentImage" src="../medicalImage/figure6.png">
+         </div>
+       </div>
+
+      <div class="twoColums">
+         <div class="wireLeft">
+           <img class="contentImage" src="../medicalImage/figure7.png">
+         </div>
+         <div class="wireRight">
+           <p style="padding-top: 80px;">When Alisa is checking her parents’ medicine status, she notices that her father’s pill dispensing device needs to be refilled soon. She remembers that her father needs to visit doctor and take a regular checkup before ordering new medicines.</p>
+         </div>
+       </div>
+
+       <div class="twoColums">
+         <div class="wire02Left">
+           <p style="padding-top: 80px;">Alisa opens the calendar section and adds a reminder one day before the checkup. She also adds a note that she needs to send her father’s medicine history to doctor when she would make an appointment with the doctor for her father.</p>
+         </div>
+         <div class="wire02Right">
+           <img class="contentImage" src="../medicalImage/figure8.png">
+         </div>
+       </div>
+
+    </div>
+
+  </div>
+
+  <div class="content" id="closerlook">
+    <h1>A Closer Look at Mobile</h1>
+    
+    <div>
+      <p><b>&#9702; Contact parents when they missed medications.</b></p><img class="contentImage" src="../medicalImage/contact-mobile.png">
+    </div>
+     <div>
+      <p><b>&#9702; Set up medication notifications.</b></p>
+      <img class="contentImage" src="../medicalImage/editmedicine-mobile.png">
+    </div>
+     <div>
+      <p><b>&#9702; Set up appointment reminders.</b></p>
+      <img class="contentImage" src="../medicalImage/appointment-mobile.png">
+    </div>
+     <div>
+      <p><b>&#9702; Receiving missed medication alert.</b></p>
+      <img class="contentImage" src="../medicalImage/alert-mobile.png">
+    </div>
+     <div>
+      <p><b>&#9702; Manage device account connections.</b></p>
+      <img class="contentImage" src="../medicalImage/profile-mobile.png">
+    </div>
+     <div>
+      <p><b>&#9702; Receiving battery and refill notifications.</b></p>
+      <img class="contentImage" src="../medicalImage/refill-mobile.png">
+    </div>
+
+  </div>
+
+  <div class="content" id="usertesting">
+     <div>
+      <h2>User Test Tasks</h2>
+      <p>The user test is aimed at testing overall flow of the application from screen to screen. And users are expected to successfully carry out 3 tasks with the application.</p>
+      <p>1. Suppose your device has already connected to the application, try to <b>add a reminder of a medicine</b> that your patient needs to take during the month, and <b>edit one existing medicine reminder for a different time</b>.<br>
+      2. Suppose the application is connected with your doctors’ accounts, try to <b>set an appointment for your patient with her dentist.</b><br>
+      3. When you receive an alert regarding that your patient has missed a medicine, try to <b>review her medical taken records and contact her</b> to check on her status.</p>
+     </div>
+
+     <div>
+      <h2>User 1</h2>
+      <p>Participant Name: Freya<br>
+         Gender: Female<br>
+         Age: 42<br>
+         Occupation: An environmental engineering professor</p>
+      <p><b>Feedback</b></p>
+      <p>While taking the three tasks, Freya is smooth with the first two tasks. She said she likes the UI design because it matches design conventions of setting pages in iOS devices. She is familiar with interactions regarding setting a reminder and add an event in her iPhone calendar, so interactions in the application is intuitive.</p>
+      <p>However, she got confused with the last task. Because in her mindset, she thinks every record is correspondent to the date showing on the left. So she would not tap the date as a menu button to open previous records. In addition, she suggested me to change the icon of medicine page in the dashboard. Because she thinks heart does not represent medicines. According to her suggestion, I changed the icon to a medicine kit. And I added a light grey background to the date session in the review page, which divides date menu from record list.</p>
+     </div>
+
+     <div>
+      <h2>User 2</h2>
+      <p>Participant Name: Lyric<br>
+         Gender: Female<br>
+         Age: 25<br>
+         Occupation: A graduate student in visual design</p>
+      <p><b>Feedback</b></p>
+      <p>Lyric completed the three tasks quickly, because she is expert in interface design and user experience design. She said she likes the transparent interface design, and she agreed that this application should be simple and straight forward. </p>
+      <p>However, she pointed out that I broke some design guidelines in my previous interface. One is that I should not use rounded rectangles to display medicine taken status in the review page. Because rounded rectangle is the shape for buttons, which would lead users to intuitively click it. Based on her suggestion, I changed to use a small circle before the name of the medicine to show the medicine taken status. Other one is that she suggested me to change icons in the medicine page to images of medicines. Because images help user recognizing medicines quickly, while icons are burdensome decorations here. </p>
+     </div>
+
+  </div>
+
+
+  <div class="content" id="device">
+    <h1>Medminder Bracelet</h1>
+    <div>
+      <img class="contentImage" src="../medicalImage/presentation.png">
+    </div>
+  </div>
+
+  <div class="contentWide">
+     <h1>Medminder Device</h1>
+  </div>  
+  <div class="contentWire">
+      <img class="Wireframe" src="../medicalImage/board.jpg">
+  </div>
+
+  <div class="footer" id="footer"> 
+    <a href="#" class="back-top">&#11014;</a>
+    
+    <div class="footerBox">      
+      <div class="footerLeft">
+        <h2>CONTACT</h2>
+        <p>Email <span> yajing@gatech.edu</span></p>
+        <p>Phone <span> +1 (470) 775-4842</span></p>
+        <p>Website <span> http://yajingyang.com</span></p>
+      </div>
+
+      <div class="footerRight">
+        <h2>© 2017 YAJING YANG</h2>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

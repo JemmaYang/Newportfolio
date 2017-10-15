@@ -1,0 +1,895 @@
+* {
+    box-sizing: border-box;
+}
+
+body {margin:0;}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px #c2c2c2;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 55px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 60px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #596471;
+}
+
+.menu{
+     float: right;
+     display: inline;
+}
+
+#logo{
+    float: left;
+    font-size: 16px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding-left: 50px;
+}
+
+.button {
+    background-color: #379EFB;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.button:hover {
+    background-color: #338DDE; 
+    color: white;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, a:focus, a:active { 
+    color: #379EFB;
+    text-decoration: none;
+    border-bottom: 0px solid green;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+#hamburgMenu {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+  .topnav .menu a{display: none;}
+  #hamburgMenu {
+    float: right;
+    display: block;
+    font-size: 30px;
+    padding-right: 50px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  
+  #hamburgMenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    clear:both;
+    text-align: center;
+  }
+  .menu{
+     float: none;
+  }
+}
+
+/*Hero Image and Big Title Part*/
+.hotelrow{
+    background-color: #FF9999;
+}
+
+.vrRow{
+    background-color: #FFC930;
+}
+
+.medicalrow{
+    background-color: #7AC4C3;
+}
+
+.medicalrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hotelrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vrRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#hotelHero{
+    max-width:95%;
+    height:auto;
+}
+
+#vrHero{
+    max-width:85%;
+    height:auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+#medicalHero{
+    max-width:80%;
+    height:auto;
+    margin-bottom: 0px;
+}
+
+.heroImg{
+    width: 60%;
+    float: left;
+    padding-top:20px;
+    text-align: center;
+  /*  border: 1px solid red;*/
+}
+
+.title{
+    width: 40%;
+    float: left;
+    padding-top:140px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+ /*   border: 1px solid red;*/
+}
+
+.title h2{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.title h3{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 800px) {
+    .heroImg, .title {
+        float: none;
+        width: auto;
+    }
+    .title {
+        padding-top:10px;
+        padding-bottom:40px;
+        text-align: center;
+        }
+    }
+
+/*Navgation Bar*/
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+#nav_bar {
+    border: 0;
+    border-radius: 0px;
+    height: 55px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px #c2c2c2;
+}
+
+.nav_links {
+    margin: 0;
+    text-align: center;
+}
+
+.nav_links li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 70px;
+  /*  width:20%;*/
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 55px;
+    font-size: 13px;
+}
+.nav_links li a { 
+    padding-top: 10px;
+    padding-bottom: 12px;
+    color: #596471;
+ /*   border: 1px solid white;*/
+}
+
+.nav_links li  a:hover, a:focus{
+    color: #34343E;
+    text-decoration: none;
+    border-bottom: 3px solid  #34343E;
+}
+
+.active{
+    color: #34343E;
+    text-decoration: none;
+    border-bottom: 3px solid  #34343E;
+}
+
+@media screen and (max-width: 800px) {
+  #nav_bar{display: none;}
+}
+
+/*My Role and Tools Box*/
+
+.myRole{
+    background-color: #f7f7f7;
+    width:65%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.myRole:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.myRole h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #2F485E;
+    font-weight: 700;
+}
+
+.myRole p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #596471;
+}
+
+
+.col-group{
+    width: 50%;
+    float: left;
+    padding-top:5px;
+    padding-bottom: 10px;
+}
+
+.left, .right{
+    width: 50%;
+    float: left;
+    padding-left:30px;
+    text-align: left;
+    line-height: 28px;
+    /*border: 1px solid red;*/
+}
+
+@media screen and (max-width: 800px) {
+   .col-group{
+        float: none;
+        width: auto;
+        clear: both;
+    }
+    }
+
+/*Main content*/
+.content{
+    width:65%;
+    margin: auto;
+    margin-top: 30px;
+/*    border: 1px solid red;*/
+}
+
+.content h2{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    color: #2F485E;
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.content h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: #2F485E;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content b{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #2F485E;
+    font-weight: 600;
+    /*padding-bottom: 5px;*/
+}
+
+.content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #596471;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.content li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #596471;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.contentImage{
+     width:100%;
+     padding-top: 20px;
+}
+
+.contentWire{
+     width:100%;
+     margin-top: 30px;
+     margin-bottom: 30px;
+     text-align: center;
+     background-color: #fafafa;
+}
+
+.Wireframe{
+     width:98%;
+     padding-top:10px; 
+     padding-bottom:10px;
+}
+
+.contentWide{
+   width:65%;
+   margin: auto;
+}
+
+.contentWide  h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: #2F485E;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contentWide h2{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    color: #2F485E;
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.contentWide b{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #2F485E;
+    font-weight: 600;
+    padding-top: 30px;
+    /*padding-bottom: 5px;*/
+}
+
+.contentWide p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #596471;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+/* Footer*/
+
+.footer{
+    background-color: #34343E;
+/*    border: 1px solid red;*/
+    margin-top: 100px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footerBox{
+    width: 60%;
+    margin: auto;
+ /*   border: 1px solid red;*/
+}
+
+.footerLeft{
+    width: 60%;
+    float: left;
+    padding-left:40px;
+    text-align: left;
+    line-height: 28px;
+ /*   border: 1px solid yellow;*/
+}
+
+.footerRight{
+    width: 40%;
+    float: left;
+    padding-left:60px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.footer h2{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #8F91A4;
+    font-weight: lighter;
+   /* padding-top: 30px;
+    padding-bottom: 10px;*/
+}
+
+.footer p{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #8F91A4;
+    font-weight: normal;
+   /* padding-top: 30px;
+    padding-bottom: 10px;*/
+}
+
+.footer span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: white;
+    font-weight: 300;
+    padding-left: 10px
+}
+
+@media screen and (max-width: 800px) {
+   .footerRight, .footerLeft{
+        float: none;
+        width: auto;
+    }
+    }
+
+
+
+/*float back-top buttom*/
+
+a.back-top {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  right: 60px;
+  bottom: 80px;
+  /*background: #F4CBD5;*/
+  text-align: center ;
+  line-height: 40px;
+  font-size: 32px;
+  color: #34343E;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*HOME Page Style*/
+
+.homeTop{
+    width:60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nameBox{
+    border: 3px solid #979797;
+    text-align: center;
+}
+
+.nameBox h1{
+    padding-top: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 36px;
+    color: #5D5D5D;
+}
+
+.nameBox p{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    color: #626262;
+    padding-bottom: 30px;
+}
+
+.nameBox span{
+    color: #379EFB;
+}
+
+.line{
+    width:50px;
+    max-width:30%;
+    margin: auto;
+    height:5px;
+    background-color: #AFD8FD;
+    margin-bottom: 10px;
+}
+
+.introduction{
+    padding-top: 20px;
+}
+
+.introduction p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #9697A4;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.introduction button{
+    background-color: #379EFB;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+#particles-js{
+    z-index: -99;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.recentWork{
+    background-color: #F5F6F6;
+    padding-top: 30px;
+}
+
+.recentWork:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.otherWork{
+    padding-top: 50px;
+ }
+
+.otherWork:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.otherWork h2{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    color: #2F485E;
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.otherWork h2.headertekst {
+  text-align: center;
+}
+
+.Row{
+    width: 85%;
+    margin: auto;
+}
+
+.leftCard, .rightCard{
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+   .leftCard, .rightCard{
+        float: none;
+        width: auto;
+      }
+}
+
+.card {
+    box-shadow:  0px 0px 4px #c2c2c2;
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.card:hover .container {
+   top: 55%;
+ }
+
+@media screen and (max-width: 1000px) {
+ .card:hover .container {
+      top: 42%;
+      }
+}
+
+@media screen and (max-width: 900px) {
+.card:hover .container {
+      top: 21%;
+      }
+}
+
+@media screen and (max-width: 800px) {
+.card:hover .container {
+      top: 65%;
+      }
+}
+
+ .card:hover .container h5{
+   display:block;
+ }
+
+.container {
+    padding: 0px 30px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    -moz-transition: top 0.3s;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+}
+
+.container {
+  top: 74%;
+}
+
+@media screen and (max-width: 1000px) {
+ .container {
+      top: 70%;
+      }
+}
+@media screen and (max-width: 900px) {
+ .container {
+      top: 58%;
+      }
+}
+
+@media screen and (max-width: 800px) {
+ .container {
+      top: 78%;
+      }
+}
+
+.container h4{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #626262;
+    line-height: 5px;
+    font-weight: lighter;
+}
+
+.container p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #9697A4;
+    /*line-height: 13px;*/
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.container h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #626262;
+    font-weight: 400;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+ .container h4{
+      line-height: 25px;
+      }
+}
+
+@media screen and (max-width: 800px) {
+ .container h4{
+      line-height: 5px;
+      }
+}
+
+
+
+#hotelCard{
+    background-color: #FF9999;
+}
+
+#medicalCard{
+    background-color: #7AC4C3;
+}
+
+#giflineCard{
+    background-color: #00A7CE;
+}
+
+#lmCard{
+    background-color: #FFC930;
+}
+
+#comodelCard{
+    background-color: #5169B0;
+}
+
+#argonCard{
+    background-color: #EE7F56;
+}
+
+#frontendCard{
+    background-color: #4AB89F;
+}
+
+/*VR page style*/
+
+.boards{
+    width: 85%;
+}
+
+.boards p{
+    padding-left: 30px;
+}
+
+.contentLeft{
+    width: 60%;
+    float: left;
+    padding-right:20px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.contentRight{
+    width: 40%;
+    float: left;
+    padding-left:10px;
+    text-align: left;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 700px) {
+   .contentLeft, .contentRight{
+        float: none;
+        width: auto;
+    }
+}
+
+.twoColums{
+    padding-bottom: 20px;
+}
+
+.twoColums:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wireLeft{
+    width: 25%;
+    float: left;
+    padding-right:20px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.wireRight{
+    width: 75%;
+    float: left;
+    padding-left:10px;
+    text-align: left;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 700px) {
+   .wireLeft, .wireRight{
+        float: none;
+        width: auto;
+    }
+}
+
+.wireHoriztalLeft{
+    width: 50%;
+    float: left;
+    padding-right:20px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.wireHoriztalRight{
+    width: 50%;
+    float: left;
+    padding-left:10px;
+    text-align: left;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 700px) {
+   .wireHoriztalLeft, .wireHoriztalRight{
+        float: none;
+        width: auto;
+    }
+}
+
+.wire02Left{
+    width: 75%;
+    float: left;
+    padding-right:20px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.wire02Right{
+    width: 25%;
+    float: left;
+    padding-left:10px;
+    text-align: left;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 700px) {
+   .wire02Left, .wire02Right{
+        float: none;
+        width: auto;
+    }
+}
+
+
