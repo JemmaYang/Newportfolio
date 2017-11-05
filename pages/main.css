@@ -112,6 +112,10 @@ body {margin:0;}
     background-color: #7AC4C3;
 }
 
+.GIFRow{
+    background-color: #1BA7CC;
+}
+
 .medicalrow:after {
     content: "";
     display: table;
@@ -130,6 +134,12 @@ body {margin:0;}
     clear: both;
 }
 
+.GIFRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #hotelHero{
     max-width:95%;
     height:auto;
@@ -140,6 +150,13 @@ body {margin:0;}
     height:auto;
     margin-top: 60px;
     margin-bottom: 50px;
+}
+
+#GIFHero{
+    max-width:55%;
+    height:auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 #medicalHero{
@@ -347,7 +364,8 @@ body {margin:0;}
 
 .contentImage{
      width:100%;
-     padding-top: 20px;
+     margin-top: 20px;
+  /*   margin: auto;*/
 }
 
 .contentWire{
@@ -892,4 +910,44 @@ a{
     }
 }
 
+#GIFposter{
+    width: 100%;
+    box-shadow: 0px 1px 4px 0px #888888;
 
+}
+
+.screenRow:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.screenRow {
+    background-color:#f2f2f2;
+}
+
+.screenRow h5{
+    font-family: 'Domine', serif;
+    font-size: 13px;
+    color: #9697A4;
+}
+
+.col-4 {
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+   /* border: 1px solid red;*/
+}
+
+.screenImage{
+    width:100%;
+    box-shadow: 0px 1px 4px 0px #888888;
+}
+
+@media screen and (max-width: 800px) {
+  .col-4{
+        float: none;
+        width: auto;
+    }
+}

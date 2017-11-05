@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GIFline -Yajing's Portfolio</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+       <a href="index.html" id="logo">JEMMA YANG</a>
+       <div class="menu">
+         <a href="index.html#Work">WHAT I DO</a>
+         <a href="resume.pdf" target="_blank">WHO I AM</a>
+         <a href="#footer"><button class="button">CONTACT ME</button></a>     <a href="javascript:void(0);" id="hamburgMenu" onclick="hamburgMenu()">&#9776;</a>
+       </div>
+    </div>
+
+    <div class="GIFRow">
+       <div class="heroImg">
+       	 <img id="GIFHero" src="../GIFlineImage/hero.png">
+       </div>
+       <div class="title">
+       	 <h2>GIFline Social Television App</h2>
+       	 <h3>… enriches the communal experience of watching television …</h3>
+       </div>
+    </div>
+
+    <nav id='nav_bar'>
+      <ul class='nav_links' id="nav">
+        <li><a href="#ideation" class="active">IDEATION</a></li>
+        <li><a href="#design">DESIGN</a></li>
+        <li><a href="#evaluation">EVALUATION</a></li>
+      </ul>
+    </nav>
+
+  <div class="myRole">
+    <div class="col-group">
+      <div class="left" >
+        <h2>MY ROLES</h2>
+        <p>Interaction Design</p>
+      </div>
+      <div class="right">
+        <h2>CLIENT & DATE</h2>
+        <p>Experimental Television Lab<br>
+          010/2016 - 12/2016</p>
+      </div>
+     </div>
+
+    <div class="col-group">
+      <div class="left">
+        <h2>METHODS</h2>
+        <p>Ethnography<br>
+           Competitive Analysis<br>
+           Wireframing</p>
+      </div>
+
+      <div class="right" >
+        <h2>TOOLS</h2>
+        <p>Balsamiq<br>
+           Sketch<br>
+           JavaScript</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <h2>Introduction</h2>
+      <p>GIFline is a social TV application that empowers viewers to aggregate, organize, and share sequences of GIFs. In doing so, GIFline enriches the communal experience of watching television.</p>
+    </div>
+
+    <div class="videoWrapper">
+       <iframe src="https://player.vimeo.com/video/194960067" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+    <div>
+      <h2>Process</h2>
+      <img class="contentImage" src="../GIFlineImage/process.png">
+    </div>
+
+  </div>
+
+  <div class="content" id="ideation">
+    <h1>Ideation</h1>
+    
+    <div>
+      <h2>Brainstorm</h2>
+      <p>The lab project started with creating a second screen companion application to help audience immersed by storyworld when watching TV shows. After several rounds of brainstorming, we decided to focus on GIFs, because GIF has narrative potential to summary a moment.</p>
+      <p><b>Design space:</b></p>
+      <p>- GIFs have become an increasingly popular media format for quickly and effectively communicating thoughts and emotions across a diverse selection of online platforms.</p>
+      <p>- They are normally only allowed to send one GIF at a time on many popular social media platforms, compared to other format of contents.​</p>
+    </div>
+
+    <div>
+      <h2>Identify User Needs</h2>
+      <p>We did primary user research, including ethnographic observation and contextual inquiry. We also did secondary research, such as literature review, technology probe, and competitive analysis. The objective was to figure out needs of audiences when they watch TV, and gain insight about gaps between comparatives and design space.</p>
+      <p><b>- Only one GIF is allowed at a time</b></p>
+      <p>While many of these platforms integrate individual GIFs into their functionality, there are currently no applications that harness the creative potential of GIFs arranged in sequence.</p>
+      <p><b>- No instant way to summarize a TV series by using scenes from the show</b></p>
+      <p>The common way to see the summary of a season of a TV show is from text or screenshots. There is no attractive or immersive way to see the key plot such as final battle or assassination.</p>
+    </div>
+
+    <div>
+      <h2>Define Concept</h2>
+      <p>At first, we did brainstorming about ideas that could address the two main findings for TV viewers without considering practical constraints. We listed out the advantages and disadvantages of each idea while making sure the platform we are about to design is providing a service that no other existing GIF service provider is offering.</p>
+      <p>Then, we made the decision that choosing the idea which is valid and feasible given the time limitation we have. During this phase, we, as a team, had heated discussions, eliminate currently unfeasible ideas, and finally hone in on the idea that the team feel the best about.</p>
+    </div>
+
+  </div>
+
+  <div class="content" id="design">
+    <h1>Design</h1>
+    
+    <div>
+      <h2>Preliminary Plan and Wireframes</h2>
+      <p>GIFline turns consumers into creators, empowering users to assemble sequences of GIFs that engage content in personally innovative ways.</p>
+      <p>GIFline provides access to categorized libraries of thousands of GIFS within the application, and users can also import their own.</p>
+      <p>To Create Stories, simply drag and drop individual GIFs into an empty GIFline template</p>
+      <p>Users are able to share the GIFlines via various social media platforms or either comment or favorite a GIFline.</p>
+      <img class="contentImage" src="../GIFlineImage/wireframe.png">
+    </div>
+
+    <div>
+      <h2>Walkthrough</h2>
+      <p>To create GIFlines, users simply drag and drop individual GIFs into an empty GIFline template. GIFline provides access to categorized libraries of thousands of GIFS within the application, and users can also import their own.</p>
+      
+      <div class="screenRow">
+         <div class="col-4">
+            <img class="screenImage" src="../GIFlineImage/homepage.png">
+            <h5>Home</h5>
+         </div>
+         <div class="col-4">
+            <img class="screenImage" src="../GIFlineImage/trending.png">
+            <h5>Trending</h5>
+         </div>
+         <div class="col-4">
+            <img class="screenImage" src="../GIFlineImage/library.png">
+            <h5>GIFs Library</h5>
+         </div>
+      </div>
+
+      <div class="screenRow">
+         <div class="col-4">
+            <img class="screenImage" src="../GIFlineImage/subcategory.png">
+            <h5>GIFs Library Subcategory</h5>
+         </div>
+         <div class="col-4">
+            <img class="screenImage" src="../GIFlineImage/officeexample.png">
+            <h5>GIFline Example</h5>
+         </div>
+         <div class="col-4">
+            <img class="screenImage" src="../GIFlineImage/activity.png">
+            <h5>Activity</h5>
+         </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>User Scenarios</h2>
+      <p>Users can create GIFlines to revisit great scenes from their favorite shows, summarize plot threads within complex story webs, compile nostalgic moments from memorable decades, consolidate famous catchphrases by iconic characters, highlight unforgettable sports moments, and ultimately convey anything they want to through a series of GIFs.</p>
+      <img class="contentImage" id="GIFposter" src="../GIFlineImage/poster.jpg">
+    </div>
+
+  </div>
+
+    <div class="content" id="evaluation">
+    <h1>Evaluation</h1>
+    <p>We presented our project (initial design) during the Georgia Tech GVU Research Showcase. More than 200 guests, researchers, employers, classmates, and reputable professors came to our demo booth and heard about our design. They loved the idea and most of them even tried to create a GIFline by themselves during the demo but also, more importantly, they provided us many constructive feedback.</p>
+    <img class="contentImage" src="../GIFlineImage/gvu.png">
+    
+    <div>
+      <h2>Positive Feedback</h2>
+      <p>&#9702; Our GIFline layout was eye-catching.</p>
+      <p>&#9702; The GIF format is relevant, with GIFs being very popular right now.</p>
+      <p>&#9702; One major benefit of the application is the potential for enhancing the communication of emotion, particularly humor, already done by single GIFs.</p>
+    </div>
+
+    <div>
+      <h2>Design Suggestions</h2>
+      <p>&#9702; Make it possible to create custom GIFs with custom subtitles within the application. This would make it simpler for users to create GIFlines while they are watching TV shows.</p>
+      <p>&#9702; Allow users to import their own “homemade” custom GIFs created from video captured on their phone or personal recording devices. This would make it possible to create GIFlines out of home videos, Snapchat stories, Instagram videos, iPhone footage, and any other video content recorded by the user.</p>
+      <p>&#9702; Make GIFlines exportable to other social media platforms. (Example: Storify)</p>
+      <p>&#9702; Look into Copyright issues, and/or make it clear that the app’s functionality is to aggregate content rather than create new content and claim authorship of it, making it less threatening to those afraid of “stealing” intellectual property.</p>
+    </div>
+
+     <div>
+      <h2>Design Changes under Consideration</h2>
+      <p>&#9702; Attempt to integrate giphy into our actual functional prototype by searching for the potential existence of a giphy API.</p>
+      <p>&#9702; Redesign of our GIFline creation functionality, to streamline it so that it requires the user to go through fewer screens in the process.</p>
+      <p>&#9702; More prominently feature custom GIF creation options even if they still take place in external apps and the custom GIFs are then imported into our application.</p>
+      <p>&#9702; Consider a way of prioritizing GIFlines in each category. Based on “engagement rate” or upvote/downvote button. </p>
+    </div>
+
+  </div>
+
+  <div class="footer" id="footer"> 
+    <a href="#" class="back-top">&#11014;</a>
+    
+    <div class="footerBox">      
+      <div class="footerLeft">
+        <h2>CONTACT</h2>
+        <p>Email <span> yajing@gatech.edu</span></p>
+        <p>Phone <span> +1 (470) 775-4842</span></p>
+        <p>Website <span> http://yajingyang.com</span></p>
+      </div>
+
+      <div class="footerRight">
+        <h2>© 2017 YAJING YANG</h2>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
