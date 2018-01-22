@@ -116,6 +116,10 @@ body {margin:0;}
     background-color: #1BA7CC;
 }
 
+.CoModelRow{
+    background-color: #5169B0;
+}
+
 .medicalrow:after {
     content: "";
     display: table;
@@ -135,6 +139,12 @@ body {margin:0;}
 }
 
 .GIFRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.CoModelRow:after {
     content: "";
     display: table;
     clear: both;
@@ -165,13 +175,21 @@ body {margin:0;}
     margin-bottom: 0px;
 }
 
+#CoModelHero{
+    max-width:60%;
+    height:auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 .heroImg{
     width: 60%;
     float: left;
     padding-top:20px;
     text-align: center;
-  /*  border: 1px solid red;*/
+/*    border: 1px solid red;*/
 }
+
 
 .title{
     width: 40%;
@@ -179,7 +197,7 @@ body {margin:0;}
     padding-top:140px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: white;
- /*   border: 1px solid red;*/
+/*    border: 1px solid red;*/
 }
 
 .title h2{
@@ -636,6 +654,7 @@ a{
 .leftCard, .rightCard{
     float: left;
     width: 50%;
+   /* background: red;*/
 }
 
 @media screen and (max-width: 800px) {
@@ -675,6 +694,12 @@ a{
 @media screen and (max-width: 800px) {
 .card:hover .container {
       top: 65%;
+      }
+}
+
+@media screen and (max-width: 640px) {
+.card:hover .container {
+      top: 60%;
       }
 }
 
@@ -758,6 +783,10 @@ a{
 
 #hotelCard{
     background-color: #FF9999;
+}
+
+#fittingCard{
+    background-color: #6A9FDD;
 }
 
 #medicalCard{
