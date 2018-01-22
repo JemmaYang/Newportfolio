@@ -120,6 +120,10 @@ body {margin:0;}
     background-color: #5169B0;
 }
 
+.FittingRow{
+    background-color: #6A9FDD;
+}
+
 .medicalrow:after {
     content: "";
     display: table;
@@ -145,6 +149,12 @@ body {margin:0;}
 }
 
 .CoModelRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.FittingRow:after {
     content: "";
     display: table;
     clear: both;
@@ -180,6 +190,13 @@ body {margin:0;}
     height:auto;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+#FittingHero{
+    max-width:70%;
+    height:auto;
+    margin-top: 30px;
+    /*margin-bottom: 20px;*/
 }
 
 .heroImg{
@@ -965,6 +982,14 @@ a{
     width: 33.33%;
     float: left;
     padding: 20px;
+    text-align: center;
+   /* border: 1px solid red;*/
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+    padding: 40px;
     text-align: center;
    /* border: 1px solid red;*/
 }
