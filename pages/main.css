@@ -1,3 +1,5 @@
+/*@import "compass/css3";*/
+
 * {
     box-sizing: border-box;
 }
@@ -554,11 +556,13 @@ a{
 
 /*HOME Page Style*/
 
+
 .homeTop{
     width:60%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+
 }
 
 .nameBox{
@@ -1012,3 +1016,4 @@ a{
         width: auto;
     }
 }
+
